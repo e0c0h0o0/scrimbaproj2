@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar setting */
+nav {
+   background-color: #f55a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 70px;
+}
+.nav--logo{
+ height: 30px;
+ 
+}
+nav > h1{
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #ffffff;
+}
+/* card design */
+section {
+  display: flex;
+  padding: 1rem;
+  max-width: 550px;
+  margin: auto;
+}
+section > img {
+  width: 125px;
+  height: 168px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 0.55rem;
+}
+.card--element {
+  padding: 1rem;
+}
+.card--element > h2 {
+    margin: 0.550rem 0;
+    line-height: 1.4rem;
+}
+.card--location {
+  display: flex;
+  align-items: center;
+}
+.fa-map-marker-alt {
+  color: #f55a5a;
+}
+
+.card--location > h4 {
+  letter-spacing: 0.17rem;
+  font-size: 0.64rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0.225rem;
+}
+.card--location > a {
+  font-size: 0.64rem;
+  text-transform: capitalize;
+  margin-left: 1rem;
+  text-decoration: underline;
+}
+.card--title {
+  text-transform: capitalize;
+  margin-bottom: 0.775rem;
+}
+.card--date {
+  font-weight: bold;
+  font-size: 0.64rem;
+  margin: 0.55rem 0;
+}
+.card--description {
+  font-size: 0.64rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 430px){
+    section{
+        display: block;
+    }
+    section > img {
+        width: 100%;
+    }
+}
